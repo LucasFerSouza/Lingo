@@ -5,32 +5,78 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+package-lock.json
+pnpm-lock.yaml
 
 # testing
 /coverage
+/.nyc_output
 
 # next.js
 /.next/
-/out/
+out/
+.next/
+out/
 
 # production
 /build
 
-# misc
-.DS_Store
-*.pem
+# clerk
+.clerk/
+clerk.config.js
+clerk.config.ts
 
-# debug
+# tailwind
+# (Normalmente mantemos tailwind.config.js versionado, mas ignore o cache se existir)
+tailwindcss-cache/
+.postcss-cache/
+
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# vercel / deployment
+.vercel
+
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
+pnpm-debug.log*
+*.log
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS and Windows
+.DS_Store
+Thumbs.db
+
+# temporary / cache files
+.cache/
+.tmp/
+*.tmp
+*.temp
+*.tgz
+
+# misc
+*.pem
+*.key
+*.crt
+*.pid
+*.seed
+
+# local build artifacts
+dist/
+public/build/
